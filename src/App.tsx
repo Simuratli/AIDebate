@@ -1,6 +1,6 @@
 import { Header, Footer, Message, Loader } from './components';
 import './style/contents/main.scss'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { MESSAGE_POSITION } from './types/global.enum';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useStore } from './store';
@@ -64,7 +64,7 @@ const App = () => {
             return {
               ...message,
               loading: false,
-              g1: 'Something went wrong!'+error.message,
+              g1: 'Something went wrong!',
             };
           }
           return message;
