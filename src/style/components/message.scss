@@ -1,0 +1,39 @@
+@import '../variables.scss';
+.message{
+   
+    width: fit-content;
+    padding: 16px 24px;
+    max-width: 50%;
+   
+    color: $white;
+   
+    
+    &__container{
+        position: relative;
+        max-width: 100%;
+        height: max-content;
+        margin-bottom: 10px;
+        &.right{
+            .message{
+                margin-left: auto;
+                text-align: right;
+                background-color: $babyBlue;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                border-top-right-radius:50px;
+                color: black;
+            }
+        }
+        &.left{
+            .message{
+                left: 0;
+                text-align: left;
+                background-color: $blue;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                border-top-left-radius:50px;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import '../variables.scss';
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   
+    &__content{
+        display: flex;
+        padding: 20px;
+        background-color: $white;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        .input{
+            flex: 1;
+            width: 100%;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: $gray;
+            color: black;
+            &__container{
+                width: 80%;
+            }
+
+        }
+        .button{
+            width: 100px;
+            background-color: $blue;
+            border-radius: 20px;
+        }
+    }
+}
