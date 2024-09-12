@@ -17,7 +17,7 @@ const App = () => {
 
 
   const genAI = new GoogleGenerativeAI(
-    "AIzaSyAwFJNFHHIcUIq3IWy8VW314gmgWxNA4r0",
+    import.meta.env.VITE_API_KEY,
   );
 
 
